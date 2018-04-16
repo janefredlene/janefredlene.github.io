@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HEY, SUNSHINE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    
+        <style>
+               body,h1,h2,h3,h4,h5 {font-family: 'Nunito', sans-serif;}
+               .w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+               .w3-third img:hover{opacity: 1}
+        </style>
+    </head>
+
+    <body class="w3-pale-blue w3-content" style="max-width:1600px">
+
+<!-- SIDEBAR -->
+<nav class="w3-sidebar w3-bar-block w3-yellow w3-animate-left w3-text-blue w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+    <span><p><img src="hslogo2.png" alt="logo" class="w3-image w3-padding-0" width="150" height="175"></p>
+    <h3 class="w3-padding-64 w3-center"><b>HEY,<br>SUNSHINE</b></h3></span>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">ONLY FOR SEHUN ❤</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a> 
+    <a href="#hcts" onclick="w3_close()" class="w3-bar-item w3-button">HERE COMES THE SUN</a> 
+    <a href="#message" onclick="w3_close()" class="w3-bar-item w3-button">MESSAGE</a>
+</nav>
+
+<!-- MAIN BODY OPEN -->
+<div class="w3-main" style="margin-left:300px">
+
+<!-- PHOTO GRID -->
+<div class="w3-row">
+    <div class="w3-third">
+      <img src="sunday1c.jpg" style="width:100%" onclick="onClick(this)" alt="180408 ICN Airport">
+      <img src="dubai2c.jpg" style="width:100%" onclick="onClick(this)" alt="180406 SMTOWN Concert in Dubai">
+      <img src="thursday2c.jpg" style="width:100%" onclick="onClick(this)" alt="180405 ICN Airport">
+    </div>
+
+    <div class="w3-third">
+      <img src="thursday1c.jpg" style="width:100%" onclick="onClick(this)" alt="I'll go wherever you will go.">
+      <img src="프리뷰01c.png" style="width:100%" onclick="onClick(this)" alt="Who's that boy?">
+      <img src="wangja2.jpg" style="width:100%" onclick="onClick(this)" alt="아! 내 왕자님!">
+    </div>
+    
+    <div class="w3-third">
+      <img src="bangkokc.jpg" style="width:100%" onclick="onClick(this)" alt="160911 The EXO'luXion in Bangkok">
+      <img src="moncler1c.jpg" style="width:100%" onclick="onClick(this)" alt="171116 Moncler Event in Hong Kong">
+      <img src="seoul1c.jpg" style="width:100%" onclick="onClick(this)" alt="161028 Moncler Flagship Store Opening">
+    </div>
+</div>
+
+<!-- PAGING -->
+<div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+</div>
+  
+<!-- MODAL FOR IMAGE ON CLICK -->
+<div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<div class="w3-container w3-pale-yellow w3-center w3-text-black w3-padding-32" id="about">
+    <h4><b>ABOUT HEY, SUNSHINE</b></h4>
+    <img src="hslogo.png" alt="logo" class="w3-image w3-padding-32" width="300" height="350">
+    <div class="w3-content w3-justify w3-center" style="max-width:600px">
+      <h4><em>All for EXO's precious maknae Oh Sehun ❤</em></h4>
+      <p>Oh Sehun is a South Korean dancer, rapper, singer, model and actor. He is also a member of the South Korean-Chinese boy group EXO.</p>
+      <p>mail: heysunshine@naver.com</p>
+      <p>tel: 0412 1994</p>
+
+<!-- HERE COMES THE SUN-->      
+<div class="w3-container w3-pale-blue w3-center w3-text-black w3-padding-32" id="hcts">
+    <h4><b>HERE COMES THE SUN</b></h4>
+    <img src="pepero.gif" alt="Me" class="w3-image w3-padding-32" width="400" height="250">
+    <div class="w3-content w3-justify w3-center" style="max-width:600px">
+      <h4><em>1st Photobook + DVD</em></h4>
+      <p>Little darling, the smiles returning to the faces</p>
+      <p>Little darling, it seems like years since it's been here</p>
+      <p>Here comes the sun</p>
+      <p>Here comes the sun, and I say</p>
+      <p>It's all right</p>
+            
+    <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+            <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                <li class="w3-black w3-xlarge w3-padding-32">SET A</li>
+                <li class="w3-padding-16">200 pages Photobook</li>
+                <li class="w3-padding-16">15 Track DVD</li>
+                <li class="w3-padding-16">Transparent Fan</li>
+                <li class="w3-padding-16">Note + Polymer Bookmark</li>
+                <li class="w3-padding-16">A4 20 pages Mini Photobook</li>
+                <li class="w3-padding-16">30 pcs Photocard Set</li>
+                <li class="w3-padding-16">
+                    <h2>$ 12</h2>
+                    <span class="w3-opacity">BASE PRICE</span></li>
+                <li class="w3-pale-yellow w3-padding-24">
+                    <button class="w3-button w3-white w3-padding-large">ORDER HERE</button></li>
+            </ul>
+        </div>
+        
+        <div class="w3-half">
+            <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                <li class="w3-black w3-xlarge w3-padding-32">SET B</li>
+                <li class="w3-padding-16">200 pages Photobook</li>
+                <li class="w3-padding-16">15 Track DVD</li>
+                <li class="w3-padding-16">Transparent Fan</li>
+                <li class="w3-padding-16">Note + Polymer Bookmark</li>
+                <li class="w3-padding-16">A4 20 pages Mini Photobook</li>
+                <li class="w3-padding-16">30 pcs Photocard Set + Tin Can</li>
+                <li class="w3-padding-16">
+                    <h2>$ 15</h2>
+                    <span class="w3-opacity">BASE PRICE</span></li>
+                <li class="w3-pale-yellow w3-padding-24">
+                    <button class="w3-button w3-white w3-padding-large">ORDER HERE</button></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+
+<!-- MESSAGE -->
+<div class="w3-container w3-pale-yellow w3-padding-32 w3-padding-large" id="message">
+    <div class="w3-content" style="max-width:600px">
+        <h4 class="w3-center"><b>MESSAGE</b></h4>
+        <p>Concerns? Queries? Fill out the form, fill me in with the details and I'll get back to you! Thank you! ❤❤❤ </p>
+        <form action="/action_page.php" target="_blank">
+            <div class="w3-section">
+                <label>Name</label>
+                <input class="w3-input w3-border" type="text" name="Name" required>
+            </div>
+            <div class="w3-section">
+                <label>Email</label>
+                <input class="w3-input w3-border" type="text" name="Email" required>
+            </div>
+            <div class="w3-section">
+                <label>Message</label>
+                <input class="w3-input w3-border" type="text" name="Message" required>
+            </div>
+            <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
+        </form>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="w3-container w3-padding-32 w3-pale-blue">  
+    <div class="w3-row-padding">
+        <div class="w3-third">
+            <h3 class="w3-text-red">TWITTER</h3>
+            <ul class="w3-ul"> 
+                <a href="https://twitter.com/luxunbao" style="text-decoration:none">
+                    <li class="w3-padding-16 w3-hover-grey">
+                        <img src="twiticon.png" class="w3-left w3-margin-right" style="width:50px">
+                        <span class="w3-large">HEY, SUNSHINE</span>
+                        <br>
+                        <br>
+                    </li>
+                </a> 
+            </ul>
+        </div>
+    
+        <div class="w3-third">
+            <h3 class="w3-text-red">YOUTUBE</h3>
+            <ul class="w3-ul">
+                <a href="https://youtu.be/0MBddwX0kQc" style="text-decoration:none">
+                    <li class="w3-padding-16 w3-hover-grey">
+                        <img src="yticon.png" class="w3-left w3-margin-right" style="width:50px">
+                        <span class="w3-large">171124 Go - The ElyXiOn in Seoul</span>
+                    </li>
+                </a>
+             
+                <a href="https://youtu.be/c0CRfNTspkA" style="text-decoration:none">
+                    <li class="w3-padding-16 w3-hover-grey">
+                        <img src="yticon.png" class="w3-left w3-margin-right" style="width:50px">
+                        <span class="w3-large">170805 The Eve - SMTOWN in Hong Kong</span>
+                    </li>
+                </a>   
+            </ul>
+        </div>
+
+        <div class="w3-third">
+            <h3 class="w3-text-red">INSTAGRAM</h3>
+            <ul class="w3-ul"> 
+                <a href="https://www.instagram.com/oohsehun/?hl=en" style="text-decoration:none">
+                    <li class="w3-padding-16 w3-hover-grey">
+                        <img src="instaicon.png" class="w3-left w3-margin-right" style="width:50px">
+                        <span class="w3-large">SEHUN</span>
+                        <br>
+                        <br>
+                    </li>
+                </a> 
+
+                    <li class="w3-padding-16 w3-hover-grey">
+                        <img src="instaicon.png" class="w3-left w3-margin-right" style="width:50px">
+                        <span class="w3-large">HEY, SUNSHINE</span>
+                        <br>
+                        <br>
+                    </li> 
+            </ul>
+        </div>
+    </div>
+</footer>
+  
+<!-- MAIN BODY CLOSE -->
+</div>
+
+    <script>
+    // OPEN AND CLOSE SIDEBAR
+    function w3_open() {document.getElementById("mySidebar").style.display = "block";
+                        document.getElementById("myOverlay").style.display = "block";}
+ 
+    function w3_close() {document.getElementById("mySidebar").style.display = "none";
+                         document.getElementById("myOverlay").style.display = "none";}
+    
+
+    // MODAL FOR PHOTO GRID 
+    function onClick(element) {document.getElementById("img01").src = element.src;
+                               document.getElementById("modal01").style.display = "block";
+                               var captionText = document.getElementById("caption");
+                               captionText.innerHTML = element.alt;}
+
+    </script>
+
+    </body>
+</html>
